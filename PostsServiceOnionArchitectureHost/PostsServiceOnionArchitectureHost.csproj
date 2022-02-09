@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationCore\DomainEntities\DomainEntities.csproj" />
+    <ProjectReference Include="..\ApplicationCore\DomainServices\DomainServices.csproj" />
+    <ProjectReference Include="..\Infrastructure\API\WebApi\WebApi.csproj" />
+    <ProjectReference Include="..\Infrastructure\Persistence\InMemoryDB\InMemoryDB.csproj" />
+  </ItemGroup>
+
+</Project>
