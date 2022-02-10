@@ -16,6 +16,7 @@
     <ProjectReference Include="..\ApplicationCore\DomainEntities\DomainEntities.csproj" />
     <ProjectReference Include="..\ApplicationCore\DomainServices\DomainServices.csproj" />
     <ProjectReference Include="..\Infrastructure\API\WebApi\WebApi.csproj" />
+    <ProjectReference Include="..\Infrastructure\Other\AutofactIoC\AutofactIoC.csproj" />
     <ProjectReference Include="..\Infrastructure\Persistence\InMemoryDB\InMemoryDB.csproj" />
   </ItemGroup>
 

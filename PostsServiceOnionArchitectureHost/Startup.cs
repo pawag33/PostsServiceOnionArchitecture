@@ -2,6 +2,7 @@ using ApplicationCore.DomainServices.Implementation;
 using ApplicationCore.DomainServices.Interfaces;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Infrastructure.Other.AutofactIoC;
 using DomainEntities.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Persistence.InMemoryDB.Repositories;
+using Infrastructure.Persistence.InMemoryDB.Repositories;
 
 namespace PostsServiceOnionArchitectureHost
 {
@@ -67,24 +68,7 @@ namespace PostsServiceOnionArchitectureHost
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            // autofac registration
-            // TODO : move it to separate class to lose decoupling  
-            builder.RegisterType<ContentModerator>()
-                    .As<IContentModerator>()
-                    .InstancePerDependency();
-
-            builder.RegisterType<PostManager>()
-                .As<IPostManager>()
-                .InstancePerDependency();
-
-            builder.RegisterType<PostRetriever>()
-                .As<IPostRetriever>()
-                .InstancePerDependency();
-
-            builder.RegisterType<PostInMemoryRepository>()
-                .As<IPostRepository>()
-                .SingleInstance();
-
+            builder.RegisterModule(new ApplicationBootstrapperModule());
         }
     }
 }

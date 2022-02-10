@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebApi.ApiModels;
+using Infrastructure.API.WebApi.ApiModels;
 
-namespace WebApi.Controllers
+namespace Infrastructure.API.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,7 +20,6 @@ namespace WebApi.Controllers
             _postRetriever = postRetriever;
             _postManager = postManager;
         }
-   
 
         [HttpPost]
         [Route("Post")]

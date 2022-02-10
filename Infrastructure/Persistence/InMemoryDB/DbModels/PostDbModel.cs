@@ -1,6 +1,5 @@
-﻿using ApplicationCore.DomainEntities.Models;
-
-namespace Persistence.InMemoryDB.DbModels
+﻿
+namespace Infrastructure.Persistence.InMemoryDB.DbModels
 {
     /// <summary>
     /// Db model needed to special functionality that related  only to db layer , like ORM functionality etc 

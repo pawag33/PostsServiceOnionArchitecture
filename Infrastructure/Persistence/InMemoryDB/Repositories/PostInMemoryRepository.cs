@@ -3,9 +3,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.DomainEntities.Models;
 using DomainEntities.Repositories;
-using Persistence.InMemoryDB.DbModels;
+using Infrastructure.Persistence.InMemoryDB.DbModels;
 
-namespace Persistence.InMemoryDB.Repositories
+namespace Infrastructure.Persistence.InMemoryDB.Repositories
 {
     public class PostInMemoryRepository : IPostRepository
     {
