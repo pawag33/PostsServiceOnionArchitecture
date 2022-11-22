@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using ApplicationCore.DomainEntities.Models;
 using ApplicationCore.DomainServices.Interfaces;
-using DomainEntities.Repositories;
+using DomainServices.Repositories;
 
 namespace ApplicationCore.DomainServices.Implementation
 {

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.DomainEntities.Models;
-using DomainEntities.Repositories;
+using DomainServices.Repositories;
 using Infrastructure.Persistence.InMemoryDB.DbModels;
 
 namespace Infrastructure.Persistence.InMemoryDB.Repositories

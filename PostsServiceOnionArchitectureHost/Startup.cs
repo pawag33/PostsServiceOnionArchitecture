@@ -3,7 +3,6 @@ using ApplicationCore.DomainServices.Interfaces;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Infrastructure.Other.AutofactIoC;
-using DomainEntities.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

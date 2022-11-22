@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainEntities.Repositories
+namespace DomainServices.Repositories
 {
     public interface IPostRepository
     {

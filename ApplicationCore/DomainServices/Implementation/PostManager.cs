@@ -1,6 +1,6 @@
 using ApplicationCore.DomainEntities.Models;
 using ApplicationCore.DomainServices.Interfaces;
-using DomainEntities.Repositories;
+using DomainServices.Repositories;
 using System.Threading.Tasks;
 
 namespace ApplicationCore.DomainServices.Implementation

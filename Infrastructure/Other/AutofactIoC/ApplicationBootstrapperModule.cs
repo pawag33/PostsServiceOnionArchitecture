@@ -1,7 +1,7 @@
 ﻿using ApplicationCore.DomainServices.Implementation;
 using ApplicationCore.DomainServices.Interfaces;
 using Autofac;
-using DomainEntities.Repositories;
+using DomainServices.Repositories;
 using Infrastructure.Persistence.InMemoryDB.Repositories;
 
 
